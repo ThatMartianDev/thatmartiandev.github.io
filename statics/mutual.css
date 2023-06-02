@@ -27,8 +27,8 @@
     --prime-color: #040608;
     --second-color: #8D5E00;
     --third-color: #090a0f;
-    --prime-gradiant1: linear-gradient(to right top, #9f4009, #9b4903, #965000, #925700, #8d5e00);
-    --prime-gradiant: -webkit-linear-gradient(45deg, var(--brown1), #8D5E00);
+    --prime-gradiant1: linear-gradient(90.18deg, #C46E00 0.66%, #76001D 96.6%);
+    --prime-gradiant: linear-gradient(90.18deg, #C46E00 0.66%, #76001D 96.6%);
     --orange: #FFA500;
     --brown1: #9f4009;
     --brown2: #8c340b;

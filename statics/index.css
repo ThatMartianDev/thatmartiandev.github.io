@@ -1,8 +1,7 @@
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+::-webkit-scrollbar {
+    width: 0px;
 }
+
 
 body {
     position: relative;
@@ -363,6 +362,20 @@ body #header {
     -webkit-transform: scale(0);
     transform: scale(0);
 }
+
+.planet > svg #crates1,
+.planet > svg #crates2 {
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+}
+
+
+.planet:not(.initial) > svg #crates1,
+.planet:not(.initial) > svg #crates2 {
+    opacity: 1;
+}
+
 
 .planet.fade-in {
     -o-transform: scale(1);
@@ -1021,10 +1034,6 @@ body #header {
 #service-svg3 img {
     height: 61%;
     aspect-ratio: 2 / 1;
-}
-
-#section-3 #scroll-down {
-    bottom: 3%;
 }
 
 /* CONTACT */
