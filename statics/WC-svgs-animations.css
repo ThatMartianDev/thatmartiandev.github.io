@@ -1,0 +1,488 @@
+#website-creation {
+    transform-box: fill-box;
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -o-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -o-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.home-svg.fade-in #website-creation {
+    transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+#mouse {
+    -o-animation: mouseAnim 13s ease 2s infinite;
+    -moz-animation: mouseAnim 13s ease 2s infinite;
+    -webkit-animation: mouseAnim 13s ease 2s infinite;
+    animation: mouseAnim 13s ease 2s infinite;
+}
+
+@keyframes mouseAnim {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(5%, -1%);
+    }
+    30% {
+        transform: translate(10%, -7%);
+    }
+    40% {
+        transform: translate(23%, -30%);
+    }
+    50% {
+        transform: translate(-12%, -30%);
+    }
+    60% {
+        transform: translate(33%, -3%);
+    }
+    80% {
+        transform: translate(11%, -4%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#video-triangle {
+    transform-box: fill-box;
+    transform-origin: center;
+    -o-animation: videoAnim 4s ease 9.285714286s infinite;
+    -moz-animation: videoAnim 4s ease 9.285714286s infinite;
+    -webkit-animation: videoAnim 4s ease 9.285714286s infinite;
+    animation: videoAnim 4s ease 9.285714286s infinite;
+}
+
+@keyframes videoAnim {
+    0% {
+        transform: rotate(0eg);
+    }
+    68% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#ball {
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -o-transition: all 1s 2s ease;
+    -moz-transition: all 1s 2s ease;
+    -webkit-transition: all 1s 2s ease;
+    transition: all 1s 2s ease;
+}
+
+.home-svg.fade-in #ball{
+    transform: scale(1);
+    -o-animation: gCircleAnim 5s ease infinite;
+    -moz-animation: gCircleAnim 5s ease infinite;
+    -webkit-animation: gCircleAnim 5s ease infinite;
+    animation: gCircleAnim 5s ease infinite;
+}
+
+@keyframes gCircleAnim {
+    0% {
+        transform: translate(11%, 6%);
+    }
+    50% {
+        transform: translate(9%, 0%);
+    }
+    100% {
+        transform: translate(11%, 6%);
+    }
+}
+
+#dancing-lines path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: -1000;
+    pointer-events: none;
+    -o-animation: linesAnim 4s ease forwards;
+    -moz-animation: linesAnim 4s ease forwards;
+    -webkit-animation: linesAnim 4s ease forwards;
+    animation: linesAnim 4s ease forwards;
+    -o-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#dancing-lines path:nth-of-type(2){
+    -o-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+@keyframes linesAnim {
+    0% {
+        stroke-dashoffset: -1000; 
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#gradiant-vector1,
+#gradiant-vector1_2 {
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transform-box: fill-box;
+    -o-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -o-transition:all 1s cubic-bezier(0.84, 0.08, 0.36, 1.61);
+    -moz-transition:all 1s cubic-bezier(0.84, 0.08, 0.36, 1.61);
+    -webkit-transition:all 1s cubic-bezier(0.84, 0.08, 0.36, 1.61);
+    transition:all 1s cubic-bezier(0.84, 0.08, 0.36, 1.61);
+}
+
+.home-svg.fade-in #gradiant-vector1,
+.home-svg.fade-in #gradiant-vector1_2 {
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* Discuss & Define chat boxes animation */
+
+#chat1 {
+    -o-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    -moz-transform: translateX(-20%);
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+    -o-transform-origin: left;
+    -ms-transform-origin: left;
+    -moz-transform-origin: left;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+}
+
+#chat2 {
+    -o-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+    -o-transform-origin: right;
+    -ms-transform-origin: right;
+    -moz-transform-origin: right;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+}
+
+#chat1, #chat2 {
+    transform-box: fill-box;
+    -o-transition: transform 1.5s var(--fast-slow-trans),
+                opacity 0.5s ease;
+    -moz-transition: transform 1.5s var(--fast-slow-trans),
+                opacity 0.5s ease;
+    -webkit-transition: transform 1.5s var(--fast-slow-trans),
+                opacity 0.5s ease;
+    transition: transform 1.5s var(--fast-slow-trans),
+                opacity 0.5s ease;
+    -o-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+
+#process-svg1.fade-in #chat1,
+#process-svg1.fade-in #chat2 {
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* doscuss & define chat circles opacity animation */
+
+
+#process-svg1.fade-in #chat1-circle1,
+#process-svg1.fade-in #chat2-circle2,
+#process-svg1.fade-in #chat3-circle3,
+#process-svg1.fade-in #chat2-circle1,
+#process-svg1.fade-in #chat2-circle2_2,
+#process-svg1.fade-in #chat2-circle3  {
+    -o-animation: chat1Circles 2.1s ease infinite;
+    -moz-animation: chat1Circles 2.1s ease infinite;
+    -webkit-animation: chat1Circles 2.1s ease infinite;
+    animation: chat1Circles 2.1s ease infinite;
+}
+
+#process-svg1.fade-in #chat2-circle1 {
+    -o-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+#process-svg1.fade-in #chat2-circle2 {
+    -o-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+#process-svg1.fade-in #chat2-circle1,
+#process-svg1.fade-in #chat3-circle3 {
+    -o-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+#process-svg1.fade-in #chat2-circle2_2 {
+    -o-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+#process-svg1.fade-in #chat2-circle3 {
+    -o-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+
+@keyframes chat1Circles {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#step2-vector,
+#step3-vector {
+    opacity: 0;
+    transition: all 0.5s var(--fast-slow-trans);
+}
+
+#step2-vector {
+    transition-delay: 1.3s;
+}
+
+#step3-vector {
+    transition-delay: 1.8s;
+}
+
+#process-svg1.fade-in #step2-vector,
+#process-svg1.fade-in #step3-vector {
+    opacity: 1;
+}
+
+#puzzles path {
+    transform: scale(0);
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: all 1s ease;
+    transition-delay: 2s;
+}
+
+#process-svg1.fade-in #puzzles path {
+    transform: scale(1);
+}
+
+/* Research Step animations */
+
+#research {
+    transform: translateY(10%);
+    transform-box: fill-box;
+    transform-origin: bottom;
+    transition: transform 1.5s var(--fast-slow-trans), opacity 0.5s ease;
+    opacity: 0;
+    transition-delay: 1.5s;
+}
+
+#process-svg1.fade-in #research {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#process-svg1.fade-in #scope {
+    animation: scopeAnim 7s ease infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes scopeAnim {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    16.6% {
+        transform: translate(6%, -12%);
+    }
+    33.3% {
+        transform: translate(2%, -8%);
+    }
+    66.6% {
+        transform: translate(-6%, -10%);
+    }
+    83.3% {
+        transform: translate(-8%, 4%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Structure & design svg animations */
+
+#process-svg2 svg {
+    overflow: visible;
+}
+
+#structuredesign {
+    overflow: visible;
+} 
+
+#process-svg2.fade-in #moving-pic {
+    animation: movingPicAnim 16s ease infinite;
+    animation-delay: 2s;
+    transform-box: fill-box;
+}
+
+@keyframes movingPicAnim {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-20%);
+    }
+    40% {
+        transform: translateX(20%);
+    }
+    60% {
+        transform: translateX(40%);
+    }
+    80% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#design-gradiant-item1,
+#design-gradiant-item2 {
+    transform: scale(0);
+    transform-box: fill-box;
+    transform-origin: bottom;
+    transition: all 1s cubic-bezier(0.84, 0.08, 0.36, 1.61);
+    transition-delay: 1s;
+}
+
+#design-gradiant-item2 {
+    transition-delay: 1.2s;
+}
+
+#process-svg2.fade-in #design-gradiant-item1,
+#process-svg2.fade-in #design-gradiant-item2 {
+    transform: scale(1);
+}
+
+/* Plan Step Animations */
+
+#plan {
+    transform: translateX(10%);
+    transform-box: fill-box;
+    transform-origin: right;
+    transition: transform 1.5s var(--fast-slow-trans), opacity 0.5s ease;
+    opacity: 0;
+    transition-delay: 2s;
+}
+
+#process-svg1.fade-in #plan {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Launch step */
+
+.process-item:nth-of-type(4).fade-in #rocket {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rocket 5s var(--fast-slow-trans) infinite;
+    -o-animation: rocket 5s var(--fast-slow-trans) infinite;
+    -moz-animation: rocket 5s var(--fast-slow-trans) infinite;
+    -webkit-animation: rocket 5s var(--fast-slow-trans) infinite;
+    animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+@keyframes rocket {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.process-item:nth-of-type(4).fade-in #rocket-thrust {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: rocket-thrust 5s var(--fast-slow-trans) infinite;
+    -o-animation: rocket-thrust 5s var(--fast-slow-trans) infinite;
+    -moz-animation: rocket-thrust 5s var(--fast-slow-trans) infinite;
+    -webkit-animation: rocket-thrust 5s var(--fast-slow-trans) infinite;
+    animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+@keyframes rocket-thrust {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
