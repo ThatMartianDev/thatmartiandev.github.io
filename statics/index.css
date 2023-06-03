@@ -1296,12 +1296,16 @@ a.contact-btn {
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .group1 {
         font-size: var(--font-size-xxl);
     }
     .group1 > span:first-of-type {
         font-size: var(--font-size-md);
+    }
+    #scroll-down {
+        bottom: 3%;
+        height: var(--font-size-xl);
     }
 }
 
