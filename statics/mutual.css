@@ -218,6 +218,11 @@ button {
     opacity: 0;
 }
 
+#loading-page.hide {
+    transform: translateY(-200%);
+    transition: all 3s ease;
+}
+
 .loading-container {
     display: -webkit-flex;
     display: flex;
@@ -236,14 +241,18 @@ button {
     color: white;
     font-size: var(--h1-fs);
     font-weight: 300;
-}
-
-#loading-page.done p {
-    opacity: 0;
     -o-transition:  all 0.5s ease;
     -moz-transition:  all 0.5s ease;
     -webkit-transition:  all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+#loading-page.done p {
+    opacity: 0;
+}
+
+#loading-page.hide p {
+    opacity: 0;
 }
 
 #hala {
@@ -266,6 +275,7 @@ button {
 
 #hala span {
     display: inline-block;
+    font-family: 'Orbitron', sans-serif;
     -o-transform: translateY(100%);
     -ms-transform: translateY(100%);
     -moz-transform: translateY(100%);
@@ -304,6 +314,8 @@ button {
     transition-delay: 0.55s;
     opacity: 1;
 }
+
+/* Sections Shape Divider */
 
 .shape-divider-top,
 .shape-divider-bottom {

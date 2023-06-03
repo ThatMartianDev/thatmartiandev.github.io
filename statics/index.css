@@ -611,6 +611,7 @@ body #header {
     -moz-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
+    overflow: visible;
 }
 
 .services-container {
@@ -662,26 +663,17 @@ body #header {
 }
 
 #section-3.idle .services-container::before {
-    -o-animation: services_before 2s cubic-bezier(.7, 0, .2, 1) 0.3s;
-    -moz-animation: services_before 2s cubic-bezier(.7, 0, .2, 1) 0.3s;
-    -webkit-animation: services_before 2s cubic-bezier(.7, 0, .2, 1) 0.3s;
-    animation: services_before 2s cubic-bezier(.7, 0, .2, 1) 0.3s;
+    -o-animation: services_before 1.5s cubic-bezier(.7, 0, .2, 1);
+    -moz-animation: services_before 1.5s cubic-bezier(.7, 0, .2, 1);
+    -webkit-animation: services_before 1.5s cubic-bezier(.7, 0, .2, 1);
+    animation: services_before 1.5s cubic-bezier(.7, 0, .2, 1);
 }
 
 #section-3.idle .services-container::after {
-    -o-animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1) 0.3s;
-    -moz-animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1) 0.3s;
-    -webkit-animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1) 0.3s;
-    animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1) 0.3s;
-}
-
-@keyframes services_before {
-    0% {
-        transform: translate(-50%, -25%);
-    }
-    100% {
-        transform: translate(-50%, 0%);
-    }
+    -o-animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1);
+    -moz-animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1);
+    -webkit-animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1);
+    animation: services_after 1.5s cubic-bezier(.7, 0, .2, 1);
 }
 
 @-o-keyframes services_before {
@@ -717,14 +709,15 @@ body #header {
     }
 }
 
-@keyframes services_after {
+@keyframes services_before {
     0% {
-        transform: translate(-50%, 20%);
+        transform: translate(-50%, -25%);
     }
     100% {
         transform: translate(-50%, 0%);
     }
 }
+
 
 @-o-keyframes services_after {
     0% {
@@ -753,6 +746,14 @@ body #header {
     }
     100% {
         -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+}
+@keyframes services_after {
+    0% {
+        transform: translate(-50%, 20%);
+    }
+    100% {
         transform: translate(-50%, 0%);
     }
 }

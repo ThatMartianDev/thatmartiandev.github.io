@@ -1,5 +1,6 @@
 export {
   throttle,
+  pageLoaderFuncs,
   general,
   headerFuncs,
   fadersFuncs,
@@ -24,6 +25,21 @@ const throttle = function (func, timeout = 600) {
     }, timeout);
   };
 };
+
+const pageLoaderFuncs = function(){
+  const pageLoader = document.getElementById("loading-page")
+  const pageLoaderP = pageLoader.querySelector("p")
+
+  if (!sessionStorage.isVisited) {
+    setTimeout(() => {
+      pageLoader.classList.add("done");
+    }, 1000);
+
+    sessionStorage.isVisited = "true";
+  } else {
+    pageLoader.classList.add("hide");
+  }
+}
 
 const general = () => {
   document.documentElement.style.setProperty(
