@@ -349,6 +349,39 @@ button {
     fill: var(--prime-color);
 }
 
+/* Common buttons */
+
+.main-CTA {
+    display: block;
+    color: white;
+    width: max-content;
+    margin-top: var(--white-space-24);
+    background: var(--prime-gradiant);
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: var(--white-space-8) var(--white-space-64);
+    border-radius: 3rem;
+    transition: transform 0.25s linear, opacity 0.5s ease 1s !important;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.main-CTA.fade-in {
+    opacity: 1;
+    animation: main-cta-fadein 1.5s ease;
+}
+
+@keyframes main-cta-fadein {
+    from {
+        transform: translateY(40%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 /* HEADER */
 
 #header {

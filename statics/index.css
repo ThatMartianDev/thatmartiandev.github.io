@@ -310,7 +310,7 @@ body #header {
 
 .group2 {
     font-size: var(--font-size-lg);
-    font-weight: 200;
+    font-weight: 300;
     max-width: 23ch;
     line-height: 1.6;
 }
@@ -430,11 +430,11 @@ body #header {
 
 
 .planet.move-to-contact {
-    -o-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 50%) rotate(63deg);
-    -ms-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 50%) rotate(63deg);
-    -moz-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 50%) rotate(63deg);
-    -webkit-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 50%) rotate(63deg);
-    transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 50%) rotate(63deg);
+    -o-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 49.5%) rotate(63deg);
+    -ms-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 49.5%) rotate(63deg);
+    -moz-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 49.5%) rotate(63deg);
+    -webkit-transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 49.5%) rotate(63deg);
+    transform: scale(12.5) translate(calc(45vw / -12.5 + 8.5%), 49.5%) rotate(63deg);
     -o-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -webkit-transition: all 2s ease;
@@ -545,58 +545,22 @@ body #header {
     font-size: var(--p-medium);
 }
 
-
 #about-btn {
-    display: block;
-    color: white;
-    font-size: var(--font-size-sm);
-    font-weight: 400;
-    padding: var(--white-space-8) var(--white-space-64);
-    border: 1px solid;
-    border-radius: 3rem;
-    -o-transition: transform 0.35s linear, opacity 0.5s ease 1.5s;
-    -moz-transition: transform 0.35s linear, opacity 0.5s ease 1.5s;
-    -webkit-transition: transform 0.35s linear, opacity 0.5s ease 1.5s;
-    transition: transform 0.35s linear, opacity 0.5s ease 1.5s;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 1;
-}
-
-#about-btn:hover {
-    animation: btn-hovered 0.5s ease forwards;
-}
-#about-btn:not(:hover) {
-    animation: btn-not-hovered 1s ease backwards;
-}
-
-@keyframes btn-hovered {
-    from {
-        background: transparent;
-    }
-    to {
-        background: var(--prime-gradiant);
-    }
-}
-@keyframes btn-not-hovered {
-    from {
-        background: var(--prime-gradiant);
-    }
-    to {
-        background: transparent;
-    }
-}
-
-#about-btn.fade-in {
-    opacity: 1;
+    margin-top: 0;
+    animation-delay: 1s;
 }
 
 #about-btn.idle {
-    -o-transition: opacity 0.25s ease;
-    -moz-transition: opacity 0.25s ease;
-    -webkit-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease;
-    opacity: 0;
+    animation: about-btn-idle 0.25s ease;
+}
+
+@keyframes about-btn-idele {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 /* SERVICES */
@@ -1117,25 +1081,9 @@ body #header {
     border-radius: 50%;
 }
 
-a.contact-btn:link,
-a.contact-btn:focus,
-a.contact-btn:active,
-a.contact-btn:visited {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a.contact-btn {
     width: 90%;
     max-width: 38ch;
-    padding: 0.8rem 3rem;
-    margin-top: 3rem;
-    border: 1px solid var(--btn-border-clr);
-    border-radius: 3rem;
-    background: transparent;
-    color: white;
-    font-size: var(--font-size-sm);
-    font-weight: 300;
-    z-index: 1111;
-    overflow: hidden;
 }
 
 /*/ Landscape Styles for Small Screens /*/

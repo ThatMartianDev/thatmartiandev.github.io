@@ -5,6 +5,7 @@ import {
   fadersFuncs,
   randomStars,
   slideOutText,
+  magneticEffect,
   talkSliderFuncs,
 } from "./mutual.js";
 
@@ -21,6 +22,7 @@ document.onreadystatechange = function () {
       headerFuncs();
       fadersFuncs();
       slideOutText();
+      magneticEffect();
       talkSliderFuncs();
 
       const starsG1 = document.getElementById("stars");
