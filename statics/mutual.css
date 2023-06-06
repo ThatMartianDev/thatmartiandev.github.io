@@ -87,7 +87,10 @@ button {
 }
 
 .gradiant-font {
-    background-image: linear-gradient(90.18deg, #C46E00 0.66%, #76001D 96.6%);
+    background: -o-linear-gradient(90.18deg, #C46E00 0.66%, #76001D 96.6%);
+    background: -moz-linear-gradient(90.18deg, #C46E00 0.66%, #76001D 96.6%);
+    background: -webkit-linear-gradient(90.18deg, #C46E00 0.66%, #76001D 96.6%);
+    background: linear-gradient(90.18deg, #C46E00 0.66%, #76001D 96.6%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -496,7 +499,7 @@ button {
     align-items: center;
     width: 80px;
     height: 80px;
-    margin-right: 8%;
+    margin-right: 5%;
     cursor: pointer;
 }
 

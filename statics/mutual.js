@@ -99,9 +99,7 @@ const fadersFuncs = function () {
   ) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setTimeout(function () {
-          entry.target.classList.add("fade-in");
-        }, 400);
+        entry.target.classList.add("fade-in");
       }
     });
   },
