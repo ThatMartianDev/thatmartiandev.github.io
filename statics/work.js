@@ -15,7 +15,7 @@ import {
       // TimeOut to apply the function after, will depend on isVisited value
       let timeOut = sessionStorage.isVisited === "true" ? 0 : 3000;
   
-      // pageLoaderFuncs();
+      pageLoaderFuncs();
   
       setTimeout(() => {
         general();
