@@ -53,6 +53,18 @@ html {
     color: white;
 }
 
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+p {
+    max-width: 50ch;
+}
+
+
 ::-webkit-scrollbar {
     width: 2px;
     background: black;
@@ -335,7 +347,7 @@ button {
 
 .shape-divider-bottom {
     bottom: 0;
-    transform: rotate(180deg) scale(-1) translateY(100%);
+    transform: rotate(180deg) scale(-1) translateY(97%);
 }
 
 .shape-divider-top svg,
@@ -354,12 +366,12 @@ button {
 
 /* Common buttons */
 
-.main-CTA {
+.main-CTA,
+.sec-CTA {
     display: block;
-    color: white;
     width: max-content;
     margin-top: var(--white-space-24);
-    background: var(--prime-gradiant);
+    color: #FFF;
     font-size: var(--font-size-sm);
     font-weight: 400;
     text-transform: capitalize;
@@ -371,7 +383,15 @@ button {
     z-index: 1;
 }
 
-.main-CTA.fade-in {
+.main-CTA {
+    background: var(--prime-gradiant);
+}
+.sec-CTA {
+    border: 1px solid var(--btn-border-clr);
+}
+
+.main-CTA.fade-in,
+.sec-CTA.fade-in {
     opacity: 1;
     animation: main-cta-fadein 1.5s ease;
 }
