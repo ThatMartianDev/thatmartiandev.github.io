@@ -71,13 +71,13 @@ const headerFuncs = () => {
     menuBtn.classList.toggle("active");
     menu.classList.toggle("active");
 
-    servicesList.classList.remove("active");
-    servicesBtn.classList.remove("active");
+    // servicesList.classList.remove("active");
+    // servicesBtn.classList.remove("active");
   });
-  servicesBtn.addEventListener("click", () => {
-    servicesList.classList.toggle("active");
-    servicesBtn.classList.toggle("active");
-  });
+  // servicesBtn.addEventListener("click", () => {
+  //   servicesList.classList.toggle("active");
+  //   servicesBtn.classList.toggle("active");
+  // });
 
   /// Menu Links Hover Effect Transition Delay
   const menuLinks = document.querySelectorAll(".menu-links");
